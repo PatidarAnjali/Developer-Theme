@@ -9,7 +9,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  background: #f2eadc;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,17 +22,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #3AAA64;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  color: #3366CC;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #2d844e;
+  color: #0645AD;
 }
 
 a:focus {
@@ -40,10 +40,10 @@ a:focus {
 }
 
 .btn, a.btn {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   font-family: 'Montserrat', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
@@ -65,16 +65,16 @@ a:focus {
 }
 
 a.btn-cta-primary, .btn-cta-primary {
-  background: #54ba4e;
-  border: 1px solid #54ba4e;
+  background: #3366BB;
+  border: 1px solid #3366BB;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #49ac43;
-  border: 1px solid #49ac43;
+  background: #0645AD;
+  border: 1px solid #0645AD;
   color: #fff;
 }
 
@@ -98,13 +98,24 @@ a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):act
 }
 
 .badge-theme {
-  background: #3AAA64;
   font-size: 12px;
   color: #fff;
   border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+
+.badge-volunteer {
+  background: mediumpurple;
+}
+
+.badge-product {
+  background: #0052CC;
+}
+
+.badge-fun {
+  background: #FF0000;
 }
 
 a.dotted-link {
@@ -121,7 +132,7 @@ a.dotted-link:hover {
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
+  border-top: 10px solid #FF5E0E;
 }
 
 .header .btn {
@@ -130,6 +141,12 @@ a.dotted-link:hover {
 
 .header .profile-image {
   margin-right: 30px;
+  border: 5px solid #FF5E0E;
+  transition: all .5s;
+}
+
+header .profile-image:hover {
+    transform: scale(1.2) rotate(360deg);
 }
 
 .header .profile-content .name {
@@ -148,6 +165,15 @@ a.dotted-link:hover {
   margin-bottom: 15px;
 }
 
+.header .profile-content .social .replit {
+  font-size: 22px;
+}
+
+.header .profile-content .social .replit img {
+  height: 26px;
+  margin-top: -4px;
+}
+
 .header .profile-content .social a {
   background: #b0b7bf;
   width: 36px;
@@ -161,14 +187,31 @@ a.dotted-link:hover {
   text-align: center;
 }
 
+.header .profile-content .social .linkedin a {
+  background: #0072b1;
+}
+
+.header .profile-content .social .youtube a {
+  background: #FF0000;
+}
+
+.header .profile-content .social .github a {
+  background: #6e5494;
+}
+
+.header .profile-content .social .replit a {
+  background: #f26208;
+}
+
 .header .profile-content .social a:hover {
-  background: #778492;
+  filter: brightness(85%);
 }
 
 .header .profile-content .social a .svg-inline--fa {
   font-size: 20px;
   margin-top: 8px;
 }
+
 
 /* ======= Sections======= */
 .section {
@@ -185,6 +228,12 @@ a.dotted-link:hover {
   margin-bottom: 30px;
   color: #545e69;
   font-size: 24px;
+}
+
+.titleunder {
+	color: #fc8e4a;
+	font-size: 20px;
+	padding-bottom: 10px;
 }
 
 .section .content .more-link .svg-inline--fa {
@@ -257,7 +306,7 @@ a.dotted-link:hover {
 }
 
 .latest .has-ribbon .text {
-  background: #3AAA64;
+  background: #3366BB;
   color: #fff;
 }
 
@@ -326,6 +375,13 @@ a.dotted-link:hover {
   color: #5f6b77;
 }
 
+.projects .col {
+  box-shadow: 0 .125rem .25rem #8888!important;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
 /* Work Section */
 .experience .item {
   margin-bottom: 30px;
@@ -386,6 +442,11 @@ a.dotted-link:hover {
   color: #ccd1d6;
 }
 
+.info .svg-inline--fa {
+  margin-right: 15px;
+  color: #ccd1d6;
+}
+
 .info .svg-inline--fa.fa-envelope-o {
   font-size: 14px;
 }
@@ -400,6 +461,35 @@ a.dotted-link:hover {
 
 .info li:last-child {
   margin-bottom: 0;
+}
+
+/* Favorites Section */
+.favorites .svg-inline--fa {
+  margin-right: 10px;
+}
+
+.favorites ul {
+  margin-bottom: 0;
+}
+
+.favorites li {
+  margin-bottom: 5px;
+}
+
+.favorites .row {
+  margin-bottom: 15px;
+}
+
+.favorites li:last-child {
+  margin-bottom: 0;
+}
+
+.fa-spotify {
+  color: #1DB954;
+}
+
+.fa-goodreads {
+  color: #75420e;
 }
 
 /* Skills Section */
@@ -510,6 +600,10 @@ a.dotted-link:hover {
 .education .item .university .year {
   color: #b0b7bf;
   font-weight: 500;
+}
+
+#ulink {
+  color: #3366BB;
 }
 
 /* Language Section */
@@ -678,7 +772,7 @@ body[data-theme="dark"] .dark-mode-switch .form-check-input:focus {
 body[data-theme="dark"] .header {
   background: #1e2124;
   color: rgba(255, 255, 255, 0.9);
-  border-top-color: #1e2124;
+  border-top-color: #FF5E0E;
 }
 
 body[data-theme="dark"] .header .profile-content .name {
@@ -687,15 +781,6 @@ body[data-theme="dark"] .header .profile-content .name {
 
 body[data-theme="dark"] .header .profile-content .desc {
   color: rgba(255, 255, 255, 0.7);
-}
-
-body[data-theme="dark"] .header .profile-content .social a {
-  background: #2e3238;
-  color: rgba(230, 230, 230, 0.7);
-}
-
-body[data-theme="dark"] .header .profile-content .social a:hover {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 body[data-theme="dark"] .section .section-inner {
@@ -754,11 +839,11 @@ body[data-theme="dark"] .aside .subheading {
 body[data-theme="dark"] .gha-header, body[data-theme="dark"] .gha-footer, body[data-theme="dark"] .gha-feed {
   background: #17191c;
   border-color: rgba(255, 255, 255, 0.1);
-  color: #3AAA64;
+  color: #3366BB;
 }
 
 body[data-theme="dark"] .gha-feed a {
-  color: #3AAA64;
+  color: #3366BB;
 }
 
 body[data-theme="dark"] .gha-header > .gha-github-icon,
